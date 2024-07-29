@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>부동산113</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font: normal 12px '고딕';
+        }
+        ul, ol {list-style: none;}
+        a {text-decoration: none; color: #111;}
+        input, textarea {outline: none;}
+
+        #wrapper {
+            width: 100%;
+            height: auto;
+        }
+
+        /* 헤더 */
+        header {
+            width: 100%;
+            height: 80px;
+            background: url('./images/header_bg.gif');
+        }
+        header > div {
+            position: relative; /* 요소 위치를 설정하는 데 사용 */
+            width: 1000px;
+            height: 100%;
+            margin: 0 auto; /* 요소를 수평 중앙에 배치하기 위해 사용되는 스타일 */
+        }
+        header .logo {margin-top: 6px;}
+        header .gnb {
+            float: right;/* 요소를 오른쪽으로 떠 있게 만드는 속성 */
+            width: 620px;
+            height: 32px;
+            margin-top: 14px;
+            overflow: hidden; /* 콘탠츠가 요소의 크기를 초과시 초과된 부분을 잘라내는 속성 */
+        }
+        header .gnb > li {
+            float: left;
+            width: 20%;
+            height: 100%;
+            box-sizing: border-box;
+            text-align: right;
+        }
+        header .gnb > li > a {
+            
+            line-height: 32px; /* 텍스트 줄 간격을 설정하는 속성 */
+            font-size: 17px;
+            font-weight: bolder; /* 설정된 폰트 보다 두껍게 만드는 속성 */
+        }
+        header .gnb > li > a:hover {
+            color: #7b231f;
+        }
+        header .latest { /**********************************/
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50%;
+            height: 30px;
+            box-sizing: border-box;
+        }
+        header .latest > a {display: inline-block; color: #555;}
+        header .latest > a:nth-child(1) {position: relative; top:4px;}
+        header .latest > a:nth-child(2) {position: relative; top:-4px;
+                        left: 6px;}
+        header .latest > a:nth-child(2)::before{
+            content: url('./images/ico_latest.gif');
+        }
+        header .latest > a:nth-child(2):hover {text-decoration: underline;}
+
+        /* 메인 */
+        main {
+            width: 1000px;
+            height: auto;
+            margin: 5px auto;
+        }
+        main > div {
+            overflow: hidden;
+        }
+        main > div > div {
+            border: 1px solid green;
+            box-sizing: border-box;
+        }
+        main > div > .banner {
+            float: left;
+            width: 588px;
+            height: 320px;
+            background: url('./images/main_banner_bg.jpg')no-repeat;
+            overflow: hidden;
+        }    /* no-repeat = 배경 이미지가 반복되지 않도록 설정하는 역할 */
+        main > div > .banner > img {
+            margin-top: 100px;
+            margin-left: 160px;
+        }
+        main > div > .banner > ul {
+            float: right;
+            width: 80px;
+            height: 100%;
+            border-left: 1px solid #d7d7d7;
+        }
+        main > div > .call {
+            float: right;
+            width: 406px;
+            height: 133px;
+        }
+        main > div > .qna {
+            float: right;
+            width: 406px;
+            height: 182px;
+            margin-top: 5px;
+        }
+        main >section {
+            overflow: hidden;
+        }
+        main > section > aside {
+            float: left;
+            width: 195px;
+            height: 760px;
+            margin-top: 5px;
+            border: 1px solid green;
+            box-sizing: border-box;
+        }
+        main > section > article {
+            float: right;
+            width: 800px;
+            height: 250px;
+            margin-top: 5px;
+            border: 1px solid green;
+            box-sizing: border-box;
+        }
+        
+        /* 푸터 */
+        footer {
+            width: 1000px;
+            height: 130px;
+            border: 1px solid blue;
+            box-sizing: border-box;
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <div id="wrapper"> 
+        <header>
+            <div>
+                <a href="#">
+                    <img src="./images/header_logo.jpg" alt="로고" class="logo">
+                </a>
+                <ul class="gnb">
+                    <li>
+                        <a href="#">회사소개</a>
+                    </li>
+                    <li>
+                        <a href="#">매물정보</a>
+                    </li>
+                    <li>
+                        <a href="#">매도의뢰</a>
+                    </li>
+                    <li>
+                        <a href="#">매입의뢰</a>
+                    </li>
+                    <li>
+                        <a href="#">질문답변</a>
+                    </li>
+                </ul>
+                <div class="latest">
+                    <a href="#">
+                        <img src="./images/header_txt_latest.gif" alt="최신매물정보">
+                    </a>
+                    <a href="#">
+                        before
+                        "[아파트] 삼성동 전세 (방:3/욕실2) / 157㎡ / 매매가 21,100"
+                    </a>
+                    <a href="#">
+                        [아파트] 삼성동 전세 (방:3/욕실2) / 157㎡ / 매매가 21,100
+                    </a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div>
+                <div class="banner">
+                    <img src="./images/aside_banner_txt.png" 
+                    alt="전국 매물 보유량 최다! 계약 만족도 최상!">
+                </div>
+                    <div class="call"></div>
+                    <div class="qna"></div>
+            </div>
+            <section>
+                <aside></aside>
+                <article></article>
+                <article></article>
+                <article></article>
+            </section>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+</html>
