@@ -182,13 +182,10 @@
         position: absolute;
         right: 44px;
         bottom: 0px;
-        display: flex;
-        justify-content: flex-end;
-            padding-top: 15px;
-            padding: 8px 8px;
-            border: 1px solid #bebebe;
-            background-color: white;
-            cursor: pointer;
+        justify-content: center;
+        border: 1px solid #bebebe;
+        background-color: white;
+        cursor: pointer;
     }
     .nextBtn {
         width: 42px;
@@ -196,12 +193,10 @@
         position: absolute;
         right: 1px;
         bottom: 0px;
-        justify-content: flex-end;
-            padding-top: 15px;
-            padding: 8px 8px;
-            border: 1px solid #bebebe;
-            background-color: white;
-            cursor: pointer;
+        justify-content: center;
+        border: 1px solid #bebebe;
+        background-color: white;
+        cursor: pointer;
     }
     footer {
         width : 100%;
@@ -241,16 +236,16 @@
                         <label class="name" for="name">이름</label>
                     </div>
                     <div>
-                        <input class="nametext" type="text" id="name" placeholder="이름 입력">
+                        <input class="nametext" type="text" placeholder="이름 입력">
                     </div>
                     <div>
                         <label class="email" for="email">이메일</label>
                     </div>
                     <div>
-                        <input class="emailtext" type="email" id="email" placeholder="이메일 입력">
-                        <button class="getCodeBtn" id="getCodeBtn">인증번호 받기</button>
-                        <input class="verificationCodetext" type="text" id="verificationCode" placeholder="인증번호 입력">
-                        <button class="verificationCode" id="verifyCodeBtn">확인</button>
+                        <input class="emailtext" type="email" placeholder="이메일 입력">
+                        <button class="getCodeBtn">인증번호 받기</button>
+                        <input class="verificationCodetext" type="text" placeholder="인증번호 입력">
+                        <button class="verificationCode">확인</button>
                     </div>
                 </div>
                 <div class="note">
@@ -258,8 +253,8 @@
                     </br>인증번호를 입력 후 확인 버튼을 누르세요.
                 </div>
                 <div class="bottom">
-                    <button class="cancelBtn" id="cancelBtn">취소</button>
-                    <button class="nextBtn" id="nextBtn">다음</button>
+                    <button class="cancelBtn">취소</button>
+                    <button class="nextBtn">다음</button>
                 </div>
             </section>
         </main>
